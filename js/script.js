@@ -161,7 +161,7 @@ let main = async () => {
         document.querySelector(".songtime").innerHTML = `${secondsToMinutesSeconds(audio.currentTime)}/${secondsToMinutesSeconds(audio.duration)}`;
         document.querySelector(".Circle").style.left = (audio.currentTime / audio.duration) * 100 + "%";
 
-        let index = songs.indexOf(audio.src.split(`/songs/${CurrentFolder}/`)[1]);
+        let index = songs.indexOf(audio.src.split(`/Songs/${CurrentFolder}/`)[1]);
         if (`${audio.currentTime}` == `${audio.duration}` && (index + 1) < songs.length) {
             console.log("Equal");
             gif = lis[index + 1].getElementsByTagName("img")[0];
