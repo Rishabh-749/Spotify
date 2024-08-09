@@ -74,7 +74,7 @@ let RestoreImage = () => {
 };
 
 const PlayMusic = (track, gif, inText, pause = false) => {
-    audio.src = `/songs/${CurrentFolder}/` + track;
+    audio.src = `/Spotify/Songs/${CurrentFolder}/` + track;
     gif.src = "Assets/Images/Gifs/music-play.gif";
     inText.innerHTML = "Playing";
 
