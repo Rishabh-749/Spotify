@@ -10,7 +10,7 @@ let CurrentFolder;
 
 let  getSongs = async (folder)=>{
     CurrentFolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/`);
+    let a = await fetch(`/songs/${folder}/`);
     let response = await a.text()
     console.log(response)
     let div = document.createElement('div');
@@ -101,7 +101,7 @@ const PlayMusic = (track,gif,inText,pause = false)=>{
 }
 
 async function DisplayAlbums(){
-    let a = await fetch(`http://127.0.0.1:3000/songs/`);
+    let a = await fetch(`/songs/`);
     let response = await a.text()
     let div = document.createElement('div');
     div.innerHTML = response; 
@@ -111,7 +111,7 @@ async function DisplayAlbums(){
         const element = a_tags[i];
         if(element.href.includes("/songs")){
             let folder = element.href.split("/songs/")[1].slice(0,-1);
-            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`);
+            let a = await fetch(`/songs/${folder}/info.json`);
             let response = await a.json()
             Card_Con_2.innerHTML = Card_Con_2.innerHTML + `<div data-folder="${folder}" class="card card-2 flex-d-c curve card-p-m justify-c">
                                     <img src="Songs/${folder}/Cover.jpeg" height="152px" width="152px" alt="Arjit Sing">
