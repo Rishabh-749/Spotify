@@ -94,7 +94,7 @@ async function DisplayAlbums() {
     let response = await a.json();
     let Card_Con_2 = document.querySelector(".card_container-2");
 
-    for (let i = 0; i < response.length; i++) {
+    for (let i = 1; i < response.length; i++) {
         const element = response[i];
         if (element.type === "dir") {
             let folder = element.name;
