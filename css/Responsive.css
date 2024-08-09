@@ -1,0 +1,173 @@
+@media (max-width: 1200px) {
+    .left{
+        /* border: 10px solid white; */
+        position: absolute;
+        /* display: none; */
+        left: -200%;
+        transition: all 0.8s;
+        z-index: 1;
+        width: 350px;
+        background-color: black;
+    }
+    
+    .left .close{
+        display: block;
+    }
+
+    .left .close img{
+        position: absolute;
+        right: 0;
+        top: 10px;
+        height: 25px;
+        filter: invert(var(--invert));
+        z-index: 1;
+    }
+
+    .right{
+        width: 100%;
+        min-height: 98vh;
+    }
+    
+    .right .header .hamburger{
+        gap: 20px;
+    }
+    
+    .right .header .hamburger img{
+        display: block;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .play-bar{
+        width: 95%;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .play-bar .above-bar{
+        /* display: flex;    */
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .Vol-time {
+        gap: 2px;
+        flex-direction: column;
+    }
+
+    .common-card .card_container{
+        justify-content: center;
+    }
+
+    .common-card .card_container-2:last-child{
+        margin-bottom: 130px;
+    }
+    
+}
+  
+@media (max-width: 500px) {
+    .left{
+        width: 300px;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+
+    .right .header{
+        padding: 10px 10px;
+    }
+
+    .right .header .hamburger{
+        align-items: center;
+    }
+
+    .right .header .buttons .btn{
+        height: 38px;
+        padding: 8px 20px;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+    }
+
+    .arrow_common{
+        height: 25px;
+        width: 25px;
+    }
+
+    .common-card .card_container{
+        justify-content: center;
+    }
+
+    .common-card .h2{
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 15px;
+    }
+
+    .common-card .card_container .card h2{
+        font-size: 14px;
+    }
+
+    .common-card .card_container .card p{
+        font-size: 12px;
+    }
+
+    .play-button .p-b{
+        height: 42px;
+        width: 42px;
+    }
+
+    .play-button button img{
+        height: 20px;
+        width: 20px;
+    }
+    .common-card .card_container .card img {
+        object-fit: cover;
+    }
+
+    .play-bar .above-bar{
+        /* display: flex;    */
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .above-bar .songtime{
+        justify-content: center;
+    }
+
+    .card-p-m {
+        padding: 18px 6px;
+    }
+}
+
+@media (max-width: 360px) {
+    .left{
+        width: 320px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .left{
+        width: 250px;
+    }
+
+    .right .header .buttons .btn{
+        height: 30px;
+        padding: 8px 15px;
+    }
+
+
+    .right .header .hamburger .nav {
+        display: none;
+    }
+
+    .songbtns, .songtime, .songinfo {
+        width: 200px;
+    }
+
+    
+}

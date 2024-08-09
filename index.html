@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="theme">
+    <head>  
+        <title>Spotify</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/utility.css">
+        <link rel="stylesheet" href="css/Common-card.css">
+        <link rel="stylesheet" href="css/Play-Bar.css">
+        <link rel="stylesheet" href="css/Responsive.css">
+    </head>
+    <body class="bg-black">
+        <div class="container flex bg-black m-1">
+            <div class="left m-2">
+                <div class="home curve flex-d-c bg-grey">
+                    <div class="close">
+                        <img src="Assets/Images/Close.svg" alt="Close">
+                    </div>
+                    <div class="logo invert">
+                        <img src="Assets/Images/Logo.svg" width="79px" height="25px" alt="Logo">
+                    </div>
+                    <ul class="flex-d-c">
+                        <li class="align-i"><img class="invert" src="Assets/Images/home.svg" alt="Home" width="25px"><span>Home</span></li>
+                        <li class="align-i"><img class="invert" src="Assets/Images/search.svg" alt="Search" width="25px"><span>Search</span></li>
+                    </ul>
+                </div>
+                <div class="library curve bg-grey flex-d-c">
+                    <div class="worked-1">
+                        <div class="heading flex">
+                            <img class="invert" src="Assets/Images/Library.svg" alt="library_logo" width="25px">
+                            <h2>Your Library</h2>
+                        </div>
+                        <div class="SongList default-p">
+                            <ul class="flex-d-c">
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="worked-2">
+                        <div class="footer flex">
+                            <div><a href="https://www.spotify.com/in-en/legal/" id=""><span>Legal</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/safetyandprivacy/" id=""><span>Safety &amp; PrivacyCenter</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/" id=""><span>Privacy Policy</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/" id=""><span>Cookies</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""><span>About Ads</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/accessibility/" id=""><span>Accessibility</span></a></div>
+                        </div>
+                        <div class="footer_btn default-p invert flex align-i">
+                            <button class="btn_f flex"><img src="Assets/Images/English.svg" width="16px" ><span class="span">English</span></button>
+                            <button class="switch flex"><img src="Assets/Images/Switch_off.svg" ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right curve m-2 bg-grey flex-d-c">
+                <div class="header curve-2 flex">
+                    <div class="hamburger flex">
+                        <img class="invert" src="Assets/Images/Hamburger.svg" alt="Hamburger">
+
+                        <div class="nav flex">
+                            <button class="l_arrow arrow_common flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                                    <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="r_arrow arrow_common flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn lbtn">Sign up</button>
+                        <button class="btn rbtn">Log in</button>
+                    </div>
+                </div>
+                <div class="popularArtists common-card">
+                        <h2 class=" h2 default-p">Popular Artists</h2>
+                        <div class="s box-shadow card_container flex p-1">
+                            <div data-folder="1_Artists/Arijit_Singh" class="card flex-d-c curve card-p-m justify-c align-i">
+                                <img src="Assets/Images/Artists/Arjit Sing.jpeg" class="circle" height="152px" width="152px" alt="Arjit Sing">
+                                <h2>Arijit Singh</h2>
+                                <p>Artist</p>
+                                <div class="play-button">
+                                    <button class="p-b flex justify-c align-i">
+                                        <img src="Assets/Images/Play-btn.svg" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </div>  
+                            <div data-folder="1_Artists/Shankar_Mahadevan" class="card flex-d-c curve card-p-m justify-c align-i">
+                                <img src="Assets/Images/Artists/Shankar Mahadevan.jpeg" class="circle" height="152px" width="152px" alt="Arjit Sing">
+                                <h2>Shankar Mahadevan</h2>
+                                <p>Artist</p>
+                                <div class="play-button">
+                                    <button class="p-b flex justify-c align-i">
+                                        <img src="Assets/Images/Play-btn.svg" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </div>  
+                            <div data-folder="1_Artists/Sonu_Nigam" class="card flex-d-c curve card-p-m justify-c align-i">
+                                <img src="Assets/Images/Artists/Sonu Nigam.jpeg" class="circle" height="152px" width="152px" alt="Arjit Sing">
+                                <h2>Sonu Nigam</h2>
+                                <p>Artist</p>
+                                <div class="play-button">
+                                    <button class="p-b flex justify-c align-i">
+                                        <img src="Assets/Images/Play-btn.svg" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </div>  
+                            <div data-folder="1_Artists/Anirudh_Ravichander" class="card flex-d-c curve card-p-m justify-c align-i">
+                                <img src="Assets/Images/Artists/Anirudh Ravichander.jpeg" class="circle" height="152px" width="152px" alt="Arjit Sing">
+                                <h2>Anirudh Ravichander</h2>
+                                <p>Artist</p>
+                                <div class="play-button">
+                                    <button class="p-b flex justify-c align-i">
+                                        <img src="Assets/Images/Play-btn.svg" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </div>  
+                            <div data-folder="1_Artists/Pritam" class="card flex-d-c curve card-p-m justify-c align-i">
+                                <img src="Assets/Images/Artists/Pritam.jpeg" class="circle" height="152px" width="152px" alt="Arjit Sing">
+                                <h2>Pritam</h2>
+                                <p>Artist</p>
+                                <div class="play-button">
+                                    <button class="p-b flex justify-c align-i">
+                                        <img src="Assets/Images/Play-btn.svg" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </div>  
+                            <div data-folder="1_Artists/Shreya_Ghoshal" class="card flex-d-c curve card-p-m justify-c align-i">
+                                <img src="Assets/Images/Artists/Shreya Ghoshal.jpeg" class="circle" height="152px" width="152px" alt="Arjit Sing">
+                                <h2>Shreya Ghoshal</h2>
+                                <p>Artist</p>
+                                <div class="play-button">
+                                    <button class="p-b flex justify-c align-i">
+                                        <img src="Assets/Images/Play-btn.svg" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                        <h2 class=" h2 default-p">Popular Playlists</h2>
+                        <div class="s card_container card_container-2 flex p-1">
+                            
+                        </div>
+                </div>
+                <div class="play-bar flex-d-c curve">
+                    <div class="above-bar flex">
+                        <div class="songinfo">
+                            <marquee class="mar"></marquee>
+                        </div>
+                        <div class="songbtns flex justify-c">
+                            <img id="Previous" src="Assets/Images/Play-Bar/Previous.svg" alt="Previous" width="30px" height="30px">
+                            <img id="Play" src="Assets/Images/Play-Bar/Play-btn.svg" alt="Play" width="30px" height="30px">
+                            <img id="Next" src="Assets/Images/Play-Bar/Next.svg" alt="Next" width="30px" height="30px">
+                        </div>
+                        <div class="Vol-time flex">
+                            <div class="songtime flex">
+                                00:00/00:00
+                            </div>
+                            <div class="volume flex">
+                                <img class="invert" src="Assets/Images/Volume.svg" alt="">
+                                <input type="range" name="Volume" id="Volume">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar curve">
+                        <div class="Circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/theme.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/Responsive_script.js"></script>
+        <script src="js/Volume.js"></script>
+    </body>
+</html>

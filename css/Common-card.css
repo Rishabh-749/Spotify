@@ -1,0 +1,81 @@
+.common-card{
+    max-height: 78vh;
+    overflow-y: scroll;
+    margin-right: 5px;
+}
+
+.common-card::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.common-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.common-card .h2{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.common-card .card_container{
+    flex-wrap: wrap;
+}
+
+.card:hover{
+    --opacity:1;
+    --play-btn-bottom: 65px;
+    --play-btn-right: 26px;
+}
+
+.common-card .card_container .card{
+    gap: 5px;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+    transition: all 0.4s ease-out;
+}
+
+.common-card .card_container .card:hover{
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+.common-card .card_container .card img{
+    object-fit: cover;
+}
+
+.common-card .card_container .card h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+.common-card .card_container .card p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(179, 179, 179);
+}
+
+.play-button{
+    position: absolute;
+    bottom: var(--play-btn-bottom);
+    right: var(--play-btn-right);
+    transition: all 0.5s;
+    opacity: var(--opacity);
+}
+
+.play-button .p-b{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: none;   
+    background-color: #1ed760;
+}
+
+.card_container-2 .play-button{
+    bottom: var(--play-btn-bottom);
+    right: 15px;
+}
+
+.box-shadow{
+    box-shadow: 0px 25px 21px 0px #2426265b inset;
+}

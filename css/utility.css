@@ -1,0 +1,69 @@
+.border{
+    border: 1px solid black;
+}
+.bg-black{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
+
+.bg-grey{
+    background-color: var(--primary);
+    color: var(--txt-color);
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.flex-d-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-c{
+    justify-content: center;
+}
+
+.align-i{
+    align-items: center;
+}
+
+.m-1{
+    margin: 2px;
+}
+
+.m-2{
+    margin: 4px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.curve{
+    border-radius: 8px;
+}
+
+.curve-2{
+    border-radius: 8px 8px 0px 0px;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.default-p{
+    padding: 8px 20px;
+}
+
+.card-p-m{
+    padding: 18px 10px;
+}
+
+.circle{
+    border-radius: 50%;
+}
