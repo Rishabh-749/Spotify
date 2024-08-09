@@ -131,6 +131,8 @@ let main = async () => {
 
     Previous.addEventListener("click", () => {
         let index = songs.indexOf(audio.src.split(`/Songs/${CurrentFolder}/`)[1]);
+        console.log(index)
+        console.log(songs[0])
         if ((index - 1) >= 0) {
             gif = lis[index - 1].getElementsByTagName("img")[0];
             inText = lis[index - 1].querySelector(".playnow").getElementsByTagName("div")[0];
