@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/*  */
 
 :root{
     --bg-color: black;
     --txt-color: white;
-    --primary: #c73636; 
-    --secondary: #983434;
-    --play-bar: #983434;
+    /* Blue */
+    --primary: #00246B; 
+    --secondary: #2c4a7e;
+    --play-bar: #2c4a7e;
+    /* Green */
+    /* --primary: #31473A; 
+    --secondary: #3f554f;
+    --play-bar: #3f554f; */
     --seek-bar: white;
     --seek-circle: white;
     --invert:0;
