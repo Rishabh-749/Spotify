@@ -9,9 +9,11 @@
         <link rel="stylesheet" href="css/Common-card.css">
         <link rel="stylesheet" href="css/Play-Bar.css">
         <link rel="stylesheet" href="css/Responsive.css">
+        <link rel="stylesheet" href="css/login_signup.css">
     </head>
     <body class="bg-black">
         <div class="container flex bg-black m-1">
+           
             <div class="left m-2">
                 <div class="home curve flex-d-c bg-grey">
                     <div class="close">
@@ -74,8 +76,27 @@
                     <div class="buttons">
                         <button class="btn lbtn">Sign up</button>
                         <button class="btn rbtn">Log in</button>
+                        <button id="logout-btn" style="display:none;">Log out</button>
                     </div>
                 </div>
+                <div id="auth-section" class="auth-section">
+                    <div class="auth-form" id="login-form">
+                        <h2>Login</h2>
+                        <input type="text" id="username" placeholder="Username">
+                        <input type="password" id="password" placeholder="Password">
+                        <button id="login-btn">Login</button>
+                        <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+                    </div>
+        
+                    <div class="auth-form" id="signup-form" style="display:none;">
+                        <h2>Sign Up</h2>
+                        <input type="text" id="new-username" placeholder="Username">
+                        <input type="password" id="new-password" placeholder="Password">
+                        <button id="signup-btn">Sign Up</button>
+                        <p>Already have an account? <a href="#" id="login-link">Log in</a></p>
+                    </div>
+                </div>
+                <div id="main-content" class="main-content" style="display:none;">
                 <div class="popularArtists common-card">
                         <h2 class=" h2 default-p">Popular Artists</h2>
                         <div class="s box-shadow card_container flex p-1">
@@ -144,7 +165,8 @@
                         <div class="s card_container card_container-2 flex p-1">
                             
                         </div>
-                </div>
+                    </div>
+                    </div>
                 <div class="play-bar flex-d-c curve">
                     <div class="above-bar flex">
                         <div class="songinfo">
@@ -175,5 +197,6 @@
         <script src="js/script.js"></script>
         <script src="js/Responsive_script.js"></script>
         <script src="js/Volume.js"></script>
+        <script src="js/login-signup.js"></script>
     </body>
 </html>
